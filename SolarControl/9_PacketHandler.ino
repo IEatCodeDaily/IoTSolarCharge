@@ -8,7 +8,7 @@ void sendData(struct ldrStruct &ldr){
 
 void sendLog(struct powerStruct &pwr){
   String packet;
-  packet = "L," +String(pwr.voltage) + "mV," + String(pwr.current) + "uA," + String(pwr.power) + "uW"; 
+  packet = "L," +String(pwr.voltage) + "," + String(pwr.current) + "," + String(pwr.power); 
   sendPacket(packet);
 }
 
